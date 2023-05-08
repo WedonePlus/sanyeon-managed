@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquare';
+    transition: .3s;
+}
+
+body,
+#root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul,li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+button > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: none;
+    cursor: pointer;
+}
+.blue-btn {
+    border: 1px solid #1a2f49 !important;
+    color: #fff !important;
+    background-color: #1a2f49 !important;
+}
+input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #999;
+}
+input::placeholder {
+    color: #999;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px;
+    box-shadow: 0 0 10px 0 #1a2f498c;
+}
+#menu-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    font-weight: bold;
+}
+#menu-tab > a:hover {
+    text-shadow: 0 0 10px #1a2f49;
+}
+footer {
+    background-color: #1a2f49;
+    padding: 50px 100px;
+}
+
+main {
+    width: 50vw;
+    margin: 100px auto;
+}
+
+
+#footer-bottom {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+}
+#footer-bottom div {
+    margin-left: 54px;;
+}
+#footer-bottom address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-style: normal;
+}
+#footer-bottom span  {
+    color: #fff;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-left: 1px solid #fff;
+    padding-left: 12px;
+    margin-right: 12px;
+    margin-bottom:4px;
+    font-size: 15px;
+}
+#footer-bottom span:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+#footer-bottom p {
+    color: rgba(255, 255, 255, .33);
+    font-size: 14px;
+}
+
+
+.main-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-visual > img {
+    width: 20vw;
+    margin-bottom: 50px;
+}
+.main-visual > button{
+    font-size: 21px;
+    color: #1a2f49;  
+    background: #fff;
+    padding: 12px 32px;
+    border-radius: 12px;
+    border-color: #1a2f49;
+}
+.main-visual > button:hover {
+    background-color: #1a2f49;
+    color: #fff;
+}
